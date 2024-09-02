@@ -39,13 +39,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -61,7 +62,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  #   - images/a_dot_ham.jpeg.
+
+  assets:
+    - assets/images/backgrounds/background_ateliecriativo.png
+    - assets/images/logos/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -85,6 +90,24 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  fonts:
+     - family: Bungee Tint
+       fonts:
+         - asset: assets/fonts/BungeeTint-Regular.ttf
+
+     - family: Nerko One
+       fonts:
+         - asset: assets/fonts/NerkoOne-Regular.ttf
+
+     - family: Protest Guerrilla
+       fonts:
+         - asset: assets/fonts/ProtestGuerrilla-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logos/logo_ateliecriativo.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/logos/logo_ateliecriativo.png"
